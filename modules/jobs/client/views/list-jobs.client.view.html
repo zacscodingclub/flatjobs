@@ -3,16 +3,23 @@
     <h1>Jobs</h1>
   </div>
   <div class="list-group">
-    <a ng-repeat="job in vm.jobs" ui-sref="jobs.view({ jobId: job._id })" class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span ng-bind="job.created | date:'mediumDate'"></span>
-        by
-        <span ng-if="job.user" ng-bind="job.user.displayName"></span>
-        <span ng-if="!job.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" ng-bind="job.title"></h4>
-      <p class="list-group-item-text" ng-bind="job.content"></p>
-    </a>
+    <table class="table table-striped">
+      <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>Salary</th>
+        <th>Date Listed</th>
+      </tr>
+
+      <tr ng-repeat="job in vm.jobs" >
+          <td>
+            <a ng-bind="job.title" ui-sref="jobs.view({ jobId: job._id })"></a>
+          </td>
+          <td ng-bind="job.company"></td>
+          <td ng-bind="job.salary | currency : '$': 0"></td>
+          <td ng-bind="job.created | date:'mediumDate'"></td>
+        </a>
+
+    </table>
   </div>
 </section>
