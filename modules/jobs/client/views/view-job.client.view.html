@@ -1,12 +1,6 @@
 <section>
   <div class="page-header">
     <h1 ng-bind="vm.job.title"></h1>
-    <p><strong>Company:</strong> <span ng-bind="vm.job.company"></span></p>
-    <p><strong>Contact Email:</strong> <span ng-bind="vm.job.contact_email"></span></p>
-    <p><strong>Salary:</strong> <span ng-bind="vm.job.salary | currency : '$' : 0 "></span></p>
-    <p><strong>State:</strong> <span ng-bind="vm.job.state"></span></p>
-    <p><strong>Description:</strong> <span ng-bind="vm.job.description"></span></p>
-    <p><strong>Requirements:</strong> <span ng-bind="vm.job.requirements"></span></p>
   </div>
   <small>
     <em class="text-muted">
@@ -17,5 +11,16 @@
       <span ng-if="!vm.job.user">Deleted User</span>
     </em>
   </small>
-  <p class="lead" ng-bind="vm.job.content"></p>
+  <br><br>
+  <div class="job-info">
+    <p><strong>Company:</strong> <span ng-bind="vm.job.company"></span></p>
+    <p><strong>Contact Email:</strong> <span ng-bind="vm.job.contact_email"></span></p>
+    <p><strong>Salary:</strong> <span ng-bind="vm.job.salary | currency : '$' : 0 "></span></p>
+    <p><strong>State:</strong> <span ng-bind="vm.job.state"></span></p>
+    <p><strong>Description:</strong> <span ng-bind="vm.job.description"></span></p>
+    <p><strong>Requirements:</strong> <span ng-bind="vm.job.requirements"></span></p>
+  </div>
+
+  <br><br>
+  <a ui-sref="jobs.list">Back</a>
 </section>
