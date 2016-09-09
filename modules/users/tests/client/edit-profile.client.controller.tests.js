@@ -52,7 +52,7 @@
         roles: ['user']
       };
 
-      // Initialize the Articles controller.
+      // Initialize the Jobs controller.
       EditProfileController = $controller('EditProfileController as vm', {
         $scope: $scope
       });

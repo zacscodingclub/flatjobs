@@ -1,5 +1,9 @@
 # How to contribute
 
+This contributing guide is copied almost directly from the MEAN.js contributors guide.  I simply cloned their repo and built my application on top of the great work done over at the [MEAN.js](https://github.com/meanjs/mean) repo.  Please check out their work and the awesome guide they have built to get you started on understanding this project.  
+
+Leaving this in, because community contributions for MEAN.js and my personal project are what keeps the internet and software development, in particular, great!:
+
 Support and contributions from the open source community are essential for keeping
 MEAN.js up to date and always improving! There are a few guidelines that we need
 contributors to follow to keep the project consistent, as well as allow us to keep
@@ -8,7 +12,7 @@ maintaining MEAN.js in a reasonable amount of time.
 ## Creating an Issue
 
 Before you create a new Issue:
-* Check the [Issues](https://github.com/meanjs/mean/issues) on Github to ensure one doesn't already exist.
+* Check the [Issues](https://github.com/zacscodingclub/flatjobs/issues) on Github to ensure one doesn't already exist.
 * Clearly describe the issue, including the steps to reproduce the issue.
 * If it's a new feature, enhancement, or restructure, Explain your reasoning on why you think it should be added, as well as a particular use case.
 
@@ -51,13 +55,13 @@ Example implementation in file.js
 Fixes #82
 ```
 
-* Types: 
+* Types:
   * feat - Features, Enhancements, and overall Improvements
   * fix - Fixes, Bugs, HotFixs, etc...
   * doc - Changes to the Documentation and doesn't actually touch any code.
 * Scope:
   * The scope should be where the change took place.
-  * Examples: users, core, config, articles
+  * Examples: users, core, config, jobs
 * Subject:
   * The subject line should be clear and concise as to what is being accomplished in the commit.
 * General Rules:
@@ -68,7 +72,7 @@ Fixes #82
 ## Submitting the Pull Request
 
 * Push your changes to your topic branch on your fork of the repo.
-* Submit a pull request from your topic branch to the master branch on the MEAN.JS repository.
+* Submit a pull request from your topic branch to the master branch on the Flatjobs repository.
 * Be sure to tag any issues your pull request is taking care of / contributing to.
 	* By adding "Closes #xyz" to a commit message will auto close the issue once the pull request is merged in.
 * Small changes are usually accepted and merged in within a week (provided that 2 collaborators give the okay)
@@ -76,10 +80,4 @@ Fixes #82
 
 ## Documentation (meanjs.org)
 
-The code for the documentation and the website are located in the meanjs/mean repo on the gh-pages branch. The website is hosted by github pages and generated using jekyll. See the README in the gh-pages branch for more information on how to get your dev enviorment set-up.
-
-## Generating a new Release
-
-For those who will be generating releases:
-* Don't forget to update the changelog!
-  * `conventional-changelog -r 1 | cat - CHANGELOG.md | tee CHANGELOG.md`
+The code for the documentation and the website are located in the meanjs/mean repo on the gh-pages branch. The website is hosted by github pages and generated using jekyll. See the README in the gh-pages branch for more information on how to get your dev environment set-up.
